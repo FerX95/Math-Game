@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "press_star";
+    src: url("../font/PressStart2P.ttf");
+}
+
+body{
+    background-color: #142020;
+    font-family: "press_star";
+}
+
+.main{
+    margin: auto;
+    text-align: center;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    width: 430px;
+    height: 500px;
+}
+
+h1{
+    padding: 15px;
+}
+
+p{
+    margin: 30px;
+}
+
+a{
+    text-decoration: none;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+a:hover{
+    background-color: #ffffff;
+    color: #142020;
+    padding: 20px;
+}
+
+#btt{
+    margin-top: 110px;
+}
+
+#credits{
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+}

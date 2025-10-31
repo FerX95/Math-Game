@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "press_star";
+    src: url("../font/PressStart2P.ttf");
+}
+
+body{
+    background-color: #142020;
+    font-family: "press_star";
+}
+
+#box, #placar, #pontos{
+    margin: auto;
+    border: 3px solid #f0f8ff;
+    color: #f0f8ff;
+    font-size: 30px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#pontos{
+    width: 430px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.bg_bar{
+    margin: auto;
+    width: 460px;
+    margin-bottom: 15px;
+    height: 30px;
+    border: 3px solid #ffffff;
+}
+
+.bar {
+    height: 100%;
+    width: 100%;
+    background-color: #ff5252;
+    transition: width 0.1s linear;
+}
+
+#box{
+    width: 459px;
+    padding: 30px 0px;
+}
+
+#placar{
+    margin-top: 50px;
+    display: flex;
+    width: 430px;
+}
+
+.botoes{
+    margin: auto;
+    width: max-content;
+}
+
+.btt{
+    cursor: pointer;
+    border: none;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 3px solid #f3fff0;
+    color: #f0f8ff;
+    font-size: 30px;
+    font-family: "press_star";
+    transition: 0.2s;
+}
+
+.big{
+    width: 368px;
+}
+
+.btt:hover{
+    background-color: #f0f8ff;
+    color: #2f4f4f;
+}
+
+/* ===== Animações de feedback (mantidas) ===== */
+.acerto { animation: pisca_verde 0.6s ease; }
+@keyframes pisca_verde {
+  0% { background: transparent; }
+  20% { background: #4caf50; }
+  100% { background: inherit; }
+}
+
+.erro { animation: pisca_vermelho 0.6s ease; }
+@keyframes pisca_vermelho {
+  0% { background: transparent; }
+  20% { background: #db7252; }
+  100% { background: inherit; }
+}
